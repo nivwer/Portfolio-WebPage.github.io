@@ -1,8 +1,8 @@
 :root {
     --color-letter: #cdcdcd;
     --color-background: #000000;
-    --color-nav: #000000f2;
-    --color-nav-menu: #000000f7;
+    --color-nav: #00000000;
+    --color-nav-menu: #00000000;
     --color-primary1: #4b4870;
     --color-primary2: #243a6e;
 }
@@ -30,14 +30,11 @@ body {
 } 
 
 body::-webkit-scrollbar {
-    width: 9px;
-    background: var(--color-gray1);
+    width: 0;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--color-gray3);
-    border: 1px solid var(--color-gray1);
-    border-radius: 10px;
+
 }
 
 .container {
@@ -141,6 +138,14 @@ body::-webkit-scrollbar-thumb {
 #welcome-section {
     width: 100vw;
     height: 100vh;
+    z-index: 10;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .welcome-section__desc {
@@ -153,19 +158,51 @@ body::-webkit-scrollbar-thumb {
     z-index: 30;
 }
 
+.welcome-section__image {
+    position: relative;
+}
+
+.welcome-section__image::before {
+    content: "";
+    width: 100%;
+    height: 101vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(350deg, #ffffff00, #0c0913a2 70%);
+}
+
 #welcome-section__img {
     max-width: 100vw;
-    width: auto;
+    width: 100%;
     display: block;
     object-fit: cover;
     height: 101vh;
+    position: fixed;
+    z-index: -1;
 }
 
 
 
 
+ /* Projects-Section */ 
+
+.projects-section {
+    z-index: 25;
+}
 
 
+/* Contact-Section */
+
+.contact-seciton {
+    z-index: 20;
+}
+
+/* Footer */
+
+footer {
+    z-index: 15;
+}
 
 
 
