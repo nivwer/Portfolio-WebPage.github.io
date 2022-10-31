@@ -1,7 +1,7 @@
 :root {
     --color-letter: #cdcdcd;
     --color-background: #000000;
-    --color-nav: #000000f6;
+    --color-nav: #040306e2;
     --color-nav-menu: #050505f7;
     --color-primary1: #4b4870;
     --color-primary2: #243a6e;
@@ -47,7 +47,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
  /* Header */
 
 
@@ -67,6 +66,8 @@ body::-webkit-scrollbar-thumb {
     width: 100vw;
     z-index: 30;
     background-color: var(--color-nav);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -80,7 +81,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header h1 i {
-    font-size: 19px;
+    font-size: 17px;
+    color: var(--color-letter)
 }
 
 
@@ -91,6 +93,8 @@ body::-webkit-scrollbar-thumb {
     padding: auto;
     cursor: pointer;
     background-color: var(--color-nav);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .header-label i {
@@ -133,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 
 #navbar li {
     width: 100%;
-    margin: 20px 30px;
+    margin: 1.5em 1.5em;
     text-align: center;
 }
 
@@ -141,12 +145,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     text-decoration: none;
     color: var(--color-letter);
-    padding: 20px 50px;
+    padding: 1em 3.2em;
 }
 
 #navbar a:hover {
     color: var(--color-primary1);
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 
@@ -159,13 +163,17 @@ body::-webkit-scrollbar-thumb {
     }
 
     #header div {
+        width: 40vw;
         background-color: #00000000;
         border-bottom: #00000000;
         margin-left: 9vw;
+        -webkit-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+        
     }
 
     #header h1 {
-        font-size: 22px;
+        font-size: 24px;
         padding: 15px 20px;
         display: inline-block;
         margin: auto 0;
@@ -201,7 +209,7 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         height: auto;
         margin-right: 9vw; 
-        background-color: #05050500;
+        background-color: #00000000;
         -webkit-backdrop-filter: blur(0);
         backdrop-filter: blur(0);
     }
@@ -222,7 +230,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #navbar a {
-        font-size: 17px;
+        font-size: 19px;
         padding: 16px 22px;
     }
 }
@@ -295,33 +303,58 @@ body::-webkit-scrollbar-thumb {
 
 
 
+/* Div-Sections */ 
 
- /* Projects-Section */ 
-
-.projects-section {
-    padding: 70px 0;
-    margin: auto;
-    max-width: 1200px;
+#div-sections {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 10px;
-    z-index: 25;
-    text-align: center;
+    flex-flow: column wrap;
+    max-width: 1200px;
+    width: 100vw;
+    margin: auto;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background:#4b487018;
     border-radius: 8px;
+    z-index: 20;
+    padding-bottom: 100px;
 }
 
-.projects-section h2 {
-    width: 90%;
+#div-sections > section > h2 {
+    font-size: 2.5em;
 }
-.projects-section .button {
-    width: 90%;
+
+#div-sections > section > p {
+    font-size: 1.1em;
+    margin-bottom: 35px;
 }
+
+
+
+
+
+ /* Projects-Section */ 
+
+.projects-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding-top: 100px;
+}
+
 
 .projects-section__div {
+    width: 100vw; 
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div-article {
     margin: 10px;
     max-width: 450px;
     width: 95%;
@@ -335,7 +368,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.projects-section__div article {
+.div-article article {
     width: 100%;
     height: 100%;
     display: flex;
@@ -349,11 +382,11 @@ body::-webkit-scrollbar-thumb {
     transition: 0.6s;
 }
 
-.projects-section__div:hover {
+.div-article:hover {
     background-size: 110%;
 }
 
-.projects-section__div:hover article {
+.div-article:hover article {
     opacity: 1;
 }
 
@@ -365,7 +398,8 @@ body::-webkit-scrollbar-thumb {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    z-index: 20;
+    margin: auto;
+    padding-top: 100px;
 }
 
 .about-section ul {
@@ -376,26 +410,48 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-section ul li {
-    width: 150px;
+    width: 100px;
     height: 100px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: flex-end;
 }
 
 
 /* Contact-Section */
 
 .contact-section {
-    z-index: 20;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
 }
+
+
+
 
 /* Footer */
 
 footer {
+    height: 120px;
+    width: 100vw;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-nav);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     z-index: 20;
+    border-top: 1px solid var(--color-nav-menu);
+}
+
+footer p {
+    margin: 0 10px;
 }
 
 
