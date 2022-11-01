@@ -79,10 +79,11 @@ body::-webkit-scrollbar-thumb {
     margin: auto 0;
     text-align: none;
     width: auto;
+    cursor: default;
 }
 
 #header div h1:hover {
-    cursor: pointer;
+    
 }
 
 #header div a {
@@ -283,10 +284,12 @@ body::-webkit-scrollbar-thumb {
 
 .welcome-section__desc h1 {
     font-size: 3em;
+    cursor: default;
 }
 
 .welcome-section__desc p {
     font-size: 1.2em;
+    cursor: default;
 }
 
 
@@ -341,11 +344,13 @@ body::-webkit-scrollbar-thumb {
 
 #div-sections > section > h2 {
     font-size: 2.5em;
+    cursor: default;
 }
 
 #div-sections > section > p {
     font-size: 1.1em;
     margin-bottom: 35px;
+    cursor: default;
 }
 
 
@@ -407,6 +412,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     font-size: 1.1em;
     padding: 10px 20px;
+    cursor: default;
 }
 
 .div-article a {
@@ -525,6 +531,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
     opacity: 0;
     transition: 0.3s;
+    cursor: default;
 }
 
 .about-section ul li:hover {
@@ -540,28 +547,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-/*
-.about-section ul li::before {
-    content: " ";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #4b487018;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    z-index: -1;
-} */
-
-
-
-
-
-
 /* Contact-Section */
 
 .contact-section {
@@ -571,6 +556,19 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     margin: auto;
     padding-top: 100px;
+}
+
+.contact-links {
+    margin: 40px;
+}
+
+.contact-section a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--color-letter);
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
 }
 
 .contact-section a:hover {
@@ -599,6 +597,7 @@ footer {
 
 footer p {
     margin: 0 10px;
+    cursor: default;
 }
 
 
