@@ -35,7 +35,6 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-
 }
 
 .container {
@@ -332,6 +331,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-flow: column wrap;
     max-width: 1200px;
+    text-align: center;
     width: 100vw;
     margin: auto;
     -webkit-backdrop-filter: blur(15px);
@@ -520,7 +520,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     text-align: center;
     border-radius: 50%;
-    transition: 0.6s;
+    transition: 0.4s;
     background: #000000a4;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -560,14 +560,20 @@ body::-webkit-scrollbar-thumb {
 
 .contact-links {
     margin: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 .contact-section a {
     font-size: 1.3em;
     text-decoration: none;
     color: var(--color-letter);
-    padding: 10px;
-    margin: 10px;
+    padding: 0.5em;
+    margin: 0.5em;
     transition: 0.3s;
 }
 
