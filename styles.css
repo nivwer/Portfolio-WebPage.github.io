@@ -446,9 +446,6 @@ body::-webkit-scrollbar {
     color: var(--color-primary1)
 }
 
-
-
-
 .projects-section .button {
     width: 15em;
     margin: auto;
@@ -458,7 +455,7 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    transition: 0.15s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .projects-section .button:hover {
