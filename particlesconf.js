@@ -5,11 +5,11 @@ particlesJS (
             "value": 100,
             "density": {
               "enable": true,
-              "value_area": 1000
+              "value_area": 3500
             }
           },
           "color": {
-            "value": "#685175"
+            "value": "#737373"
           },
           "shape": {
             "type": "circle",
